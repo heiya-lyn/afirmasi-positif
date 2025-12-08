@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tes Kesehatan Mental</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+
+    <!-- Video background div yang kamu setujui -->
+    <div id="video-bg" style="display: none;"></div>
+
+    <div class="background-image" id="bg sad" style="display: none;"></div>
+
+    <div class="container">
+        <div class="quiz">
+            <h1>Tes Kesehatan Mental</h1>
+            <p>Jawab pertanyaan berikut untuk mengetahui apakah kamu sedang stres.</p>
+
+            <div id="questions">
+
+                <div class="question" id="q1">
+                    <h2>1. Apakah kamu sering merasa cemas tanpa alasan jelas?</h2>
+                    <div class="options">
+                        <button class="option" data-value="1">Ya</button>
+                        <button class="option" data-value="0">Tidak</button>
+                    </div>
+                </div>
+
+                <div class="question" id="q2" style="display:none;">
+                    <h2>2. Apakah kamu kesulitan tidur di malam hari?</h2>
+                    <div class="options">
+                        <button class="option" data-value="1">Ya</button>
+                        <button class="option" data-value="0">Tidak</button>
+                    </div>
+                </div>
+
+                <div class="question" id="q3" style="display:none;">
+                    <h2>3. Apakah kamu merasa lelah sepanjang hari?</h2>
+                    <div class="options">
+                        <button class="option" data-value="1">Ya</button>
+                        <button class="option" data-value="0">Tidak</button>
+                    </div>
+                </div>
+
+                <div class="question" id="q4" style="display:none;">
+                    <h2>4. Apakah kamu kehilangan minat pada hobi atau aktivitas favorit?</h2>
+                    <div class="options">
+                        <button class="option" data-value="1">Ya</button>
+                        <button class="option" data-value="0">Tidak</button>
+                    </div>
+                </div>
+
+                <div class="question" id="q5" style="display:none;">
+                    <h2>5. Apakah kamu sering merasa mudah marah?</h2>
+                    <div class="options">
+                        <button class="option" data-value="1">Ya</button>
+                        <button class="option" data-value="0">Tidak</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="result">
+            <h2 id="result-message"></h2>
+        </div>
+
+        <div class="affirmation">
+            <h2>Afirmasi Positif untuk Kamu!</h2>
+            <p>Klik pada kartu untuk membaliknya dan ikuti perintah selama 30 detik.</p>
+
+            <div class="cards">
+                <div class="card" id="card1">
+                    <div class="card-back">Kartu 1</div>
+                    <div class="card-content">
+                        <p>Tarik napas 3 kali dan ucapkan "Aku kuat dan aku bisa hadapi tantangan."</p>
+                    </div>
+                </div>
+
+                <div class="card" id="card2">
+                    <div class="card-back">Kartu 2</div>
+                    <div class="card-content">
+                        <p>Pejamkan mata lalu ucapkan "Aku berharga dan pantas bahagia."</p>
+                    </div>
+                </div>
+
+                <div class="card" id="card3">
+                    <div class="card-back">Kartu 3</div>
+                    <div class="card-content">
+                        <p>Letakkan tangan di dada dan ucapkan "Aku tenang. Aku aman. Aku cukup."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timer" id="timer">30</div>
+            <div class="notification" id="notification">Selamat! Anda telah berhasil melakukan afirmasi positif.</div>
+
+            <div class="youtube-link" id="youtube-link">
+                <a href="https://youtu.be/MvSkn9svGGw" target="_blank">Tonton Video Pentingnya Kesehatan Mental</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

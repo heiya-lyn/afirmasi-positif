@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-image 0.5s ease;
+}
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    max-width: 600px;
+    width: 90%;
+}
+h1, h2 {
+    color: #333;
+}
+.quiz {
+    display: block;
+}
+.result, .affirmation {
+    display: none;
+}
+.question {
+    margin-bottom: 20px;
+}
+.options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.option {
+    background-image: url('tombol pink.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 120px;
+    height: 120px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+.option:hover {
+    transform: scale(1.05);
+}
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.card {
+    width: 180px;
+    height: 120px;
+    background: linear-gradient(135deg, #FF8DA1, #FFB3BA);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    alignalign-items: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.5);
+    transition: transform 0.3s ease;
+    margin: 10px;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card.flipped {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.card-content {
+    display: none;
+}
+.card.flipped .card-content {
+    display: block;
+}
+.timer {
+    font-size: 24px;
+    margin-top: 20px;
+}
+.notification {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    color: #155724;
+}
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.youtube-link {
+    margin-top: 10px;
+    display: none;
+}
